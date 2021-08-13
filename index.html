@@ -5,36 +5,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Coding Assignment</title>
+  <link rel='stylesheet' href='styles.css'>
 </head>
+
 <body>
-  <div>
-    <a href="pitch.html">Pitch</a>
-    <a href="intensity.html">Intensity</a>
-    <a href="duration.html">Duration</a>
+  <nav class='navbar'>
+    <ul>
+      <li><a href="pitch.html">Pitch</a><li>
+      <li><a href="intensity.html">Intensity</a><li>
+      <li><a href="duration.html">Duration</a><li>
+    </ul>
+  </nav>
+
+  <div id='main'>
+    <div class='section-top'>
+      <h1>Welcome to Stronger Voice!</h1>
+        <div class='center'>
+          <div class='section-center'>
+            <h2>Program Targets</h2>
+              <ul>
+                <li>
+                  <span>Intensity</span>
+                </li>
+                <li>
+                  <span>Duration</span>
+                </li>
+                <li>
+                  <span>Pitch</span>
+                </li>
+              </ul>
+          </div>
+          <div class='section-center'>
+            <img alt='yoda meme strong is the force in your head, my voice yoda put' class='image' src='yoda.png'>
+          </div>
+        </div>
+    </div>
+
+    <div class='form'>
+      <h3>Register to Save Your Progress</h3>
+      <form>
+        <label for='firstName'>First name:</label><br>
+        <input type='text' id='firstName' name='first name'><br>
+        <label for='lastName'>Last name:</label><br>
+        <input type='text' id='lastName' name='last name'><br><br>
+        <label for='email'>Email:</label><br>
+        <input type='text' id='email' name='email'><br>
+        <input type='submit' value='Submit'>
+      </form>
+    </div>
   </div>
-  <header><h1>Welcome to Stronger Voice!</h1></header>
-  <div>
-    <h3>Program Targets</h3>
-      <ul>
-        <li>Intensity</li>
-        <li>Duration</li>
-        <li>Pitch</li><br>
-      </ul>
-  </div>
-  <img height="150px" alt="yoda meme strong is the force in your head, my voice yoda put" src="yoda.png">
-  <div>
-    <br>
-    <h3>Register to Save Your Progress</h3>
-    <form>
-      <label for="firstName">First name:</label><br>
-      <input type="text" id="firstName" name="first name"><br>
-      <label for="lastName">Last name:</label><br>
-      <input type="text" id="lastName" name="last name"><br><br>
-      <label for="email">Email:</label><br>
-      <input type="text" id="email" name="email"><br>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-  <h3><footer>Contact Us: #</footer></h3>
+
+  <footer>
+    <h3>Contact Us: #</h3>
+  </footer>
+  
 </body>
 </html>
