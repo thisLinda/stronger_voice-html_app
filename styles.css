@@ -1,6 +1,7 @@
 body {
   background-color: #BDBDBD;
   font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
   margin: 5%;
   padding: 0;
 }
@@ -8,33 +9,33 @@ body {
 /***** Navbar *****/
 
 nav.navbar {
-    background-color: #BDBDBD;
-    padding: 15px;
-    display: flex;
-    color: #F2F2F2;
+  background-color: #BDBDBD;
+  padding: 15px;
+  display: flex;
+  color: #F2F2F2;
 }
 
 nav.navbar ul {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.1rem;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
 }
 
 nav.navbar li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav.navbar a {
-    color: #F2F2F2;
-    text-decoration: none;
+  color: #F2F2F2;
+  text-decoration: none;
 }
 
-/***** *****/
+/***** Sections *****/
 
 .section-center {
   text-align: center;
@@ -47,10 +48,8 @@ nav.navbar a {
 
 .center div {
   flex-grow: 1;
-  padding: 30px 30px;
+  padding: 30px 30px; */
 }
-
-/***** Section-Top *****/
 
 #section-top {
   background-color: #D3D3D3;
@@ -72,10 +71,26 @@ h1 {
   padding: 5px 50px;
 }
 
+.section-center ul {
+  list-style: circle;
+}
+
 .section-center li {
   color: #808080;
   font-size: 1.5rem;
-  list-style-type:
+  margin: 5px;
+  padding-left: 15px;
+}
+
+.section-center ul, 
+.section-center li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  vertical-align: auto;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-left: -15px;
 }
 
 img {
@@ -97,12 +112,29 @@ h3 {
   font-style: italic;
 }
 
+input[type=text] {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/**** Table ****/
+
+h4 {
+  font-size: 1.2rem;
+  padding-top: 0;
+}
+
+td, th {
+  border: 1px solid #BDBDBD;
+  padding: 0.5rem;
+}
+
 /**** Footer ****/
 
-footer {
+footer h3 {
   background-color: #BDBDBD;
+  font-style: normal;
   margin: 20px 0px;
-  padding: 10px;
 }
 
 footer .section {
